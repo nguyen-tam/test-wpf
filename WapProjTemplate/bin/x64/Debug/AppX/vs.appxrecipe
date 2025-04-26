@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KEUPELV</Machine>
+    <WindowsUser>tam</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>549cf2fc-ac97-4e31-abcc-0d08331d18bc</PackageIdentityName>
+    <PackageIdentityPublisher>CN=tam</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\tam\source\repos\TestWindows\WapProjTemplate\obj\x64\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>2BE753418B1CA28FC5CEE19885BF4BCF22CBFFCA828AFF08865E1DB98B61E8DA</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>549cf2fc-ac97-4e31-abcc-0d08331d18bc_1.0.0.0_x64__ca3wvtpx9d066</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>549cf2fc-ac97-4e31-abcc-0d08331d18bc_ca3wvtpx9d066!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>549cf2fc-ac97-4e31-abcc-0d08331d18bc</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=tam</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-04-26T07:38:07.113</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-02-10T09:17:42.686</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2025-02-10T09:17:42.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-02-10T09:17:42.687</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-02-10T09:17:42.688</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-02-10T09:17:42.689</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-02-10T09:17:42.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-02-10T09:17:42.693</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2025-04-26T07:19:11.338</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.deps.json">
+      <PackagePath>TestWindows\TestWindows.deps.json</PackagePath>
+      <Modified>2025-04-26T07:17:02.985</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\apphost.exe">
+      <PackagePath>TestWindows\TestWindows.exe</PackagePath>
+      <Modified>2025-04-26T07:38:06.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.runtimeconfig.json">
+      <PackagePath>TestWindows\TestWindows.runtimeconfig.json</PackagePath>
+      <Modified>2025-04-26T07:17:03.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.dll">
+      <PackagePath>TestWindows\TestWindows.dll</PackagePath>
+      <Modified>2025-04-26T07:38:06.587</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
