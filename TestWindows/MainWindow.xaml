@@ -43,21 +43,26 @@
                 
                 <!-- Your ComboBox -->
                 <ComboBox Grid.Column="1" x:Name="YourComboBox" Width="200" Margin="20,4" VerticalAlignment="Center" 
-                          IsEditable="True" IsReadOnly="True" Text="Select an option"/>
+                          IsEditable="True" IsReadOnly="True" Text="Select an option"
+                          WindowChrome.IsHitTestVisibleInChrome="True"/>
                 
                 <!-- Your Button -->
                 <Button Grid.Column="2" x:Name="YourButton" Content="Action" Width="80" Margin="5,0" 
-                        VerticalAlignment="Center" Style="{StaticResource StandardButtonStyle}"/>
+                        VerticalAlignment="Center" Style="{StaticResource StandardButtonStyle}"
+                        WindowChrome.IsHitTestVisibleInChrome="True"/>
                 
                 <!-- Window Control Buttons -->
                 <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button x:Name="MinimizeButton" Width="46" Height="32" Style="{StaticResource WindowControlButtonStyle}">
+                    <Button x:Name="MinimizeButton" Width="46" Height="32" Style="{StaticResource WindowControlButtonStyle}"
+                            WindowChrome.IsHitTestVisibleInChrome="True">
                         <Path x:Name="MinimizeIcon" Width="10" Height="1" Stroke="{StaticResource WindowControlsForegroundBrush}" StrokeThickness="1.5"/>
                     </Button>
-                    <Button x:Name="MaximizeButton" Width="46" Height="32" Style="{StaticResource WindowControlButtonStyle}">
+                    <Button x:Name="MaximizeButton" Width="46" Height="32" Style="{StaticResource WindowControlButtonStyle}"
+                            WindowChrome.IsHitTestVisibleInChrome="True">
                         <Path x:Name="MaximizeIcon" Width="10" Height="10" Stroke="{StaticResource WindowControlsForegroundBrush}" StrokeThickness="1.5" Data="M 0,0 H 10 V 10 H 0 Z"/>
                     </Button>
-                    <Button x:Name="CloseButton" Width="46" Height="32" Style="{StaticResource WindowControlButtonStyle}">
+                    <Button x:Name="CloseButton" Width="46" Height="32" Style="{StaticResource WindowControlButtonStyle}"
+                            WindowChrome.IsHitTestVisibleInChrome="True">
                         <Path x:Name="CloseIcon" Width="10" Height="10" Stroke="{StaticResource WindowControlsForegroundBrush}" StrokeThickness="1.5" Data="M 0,0 L 10,10 M 0,10 L 10,0"/>
                     </Button>
                 </StackPanel>

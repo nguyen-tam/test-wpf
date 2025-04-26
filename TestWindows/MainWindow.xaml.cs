@@ -47,19 +47,24 @@ namespace TestWindows
         // Make window draggable from title bar
         private void AppTitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            try
+            // Ensure the click is on the title bar background itself, not on interactive elements
+            if (e.OriginalSource == AppTitleBar || e.OriginalSource == AppTitle) // Add other non-interactive elements if needed
             {
-                if (e.ChangedButton == MouseButton.Left && e.ButtonState == MouseButtonState.Pressed)
+                try
                 {
-                    if (Mouse.LeftButton == MouseButtonState.Pressed)
+                    if (e.ChangedButton == MouseButton.Left && e.ButtonState == MouseButtonState.Pressed)
                     {
-                        DragMove();
+                        // Check again before dragging, in case the mouse button was released quickly
+                        if (Mouse.LeftButton == MouseButtonState.Pressed) 
+                        {
+                            DragMove();
+                        }
                     }
                 }
-            }
-            catch (InvalidOperationException)
-            {
-                // Ignore errors if mouse button is released during drag
+                catch (InvalidOperationException)
+                {
+                    // Ignore errors if mouse button is released during drag
+                }
             }
         }
 
@@ -134,6 +139,7 @@ namespace TestWindows
 
         private const int WM_NCHITTEST = 0x0084;
         private const int HTMAXBUTTON = 9; // Indicates the maximize button
+        private const int WM_NCLBUTTONDOWN = 0x00A1; // Non-client left button down
 
         // Basic Point struct if not available
         [StructLayout(LayoutKind.Sequential)]
@@ -150,9 +156,10 @@ namespace TestWindows
 
         private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
+            // First, handle the hit-testing for snap layouts
             if (msg == WM_NCHITTEST)
             {
-                // Use the custom Point struct for GetCursorPos
+                // Get cursor position relative to the screen
                 Point screenPointWin32 = new Point(); 
                 if (GetCursorPos(ref screenPointWin32))
                 {
@@ -173,11 +180,34 @@ namespace TestWindows
                         if (buttonBounds.Contains(clientPoint)) // Use the WPF clientPoint here
                         {
                             handled = true;
-                            return new IntPtr(HTMAXBUTTON);
+                            return new IntPtr(HTMAXBUTTON); // Tell Windows this is the maximize button
                         }
                     }
                 }
             }
+            // Second, handle the click if Windows sends it because of HTMAXBUTTON
+            else if (msg == WM_NCLBUTTONDOWN)
+            {
+                // Check if the click corresponds to the maximize button area
+                if (wParam.ToInt32() == HTMAXBUTTON)
+                {
+                    // Manually trigger the maximize/restore logic
+                    if (WindowState == WindowState.Maximized)
+                    {
+                        WindowState = WindowState.Normal;
+                    }
+                    else
+                    {
+                        WindowState = WindowState.Maximized;
+                    }
+                    UpdateMaximizeIcon(); // Ensure the icon updates
+
+                    handled = true; // We've handled the message
+                    return IntPtr.Zero; // Indicate message processed
+                }
+            }
+
+            // Return Zero for messages we don't handle
             return IntPtr.Zero;
         }
     }

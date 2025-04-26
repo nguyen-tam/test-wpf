@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-26T16:05:06.488</Modified>
+      <Modified>2025-04-26T16:24:15.450</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -79,7 +79,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\apphost.exe">
       <PackagePath>TestWindows\TestWindows.exe</PackagePath>
-      <Modified>2025-04-26T16:05:05.327</Modified>
+      <Modified>2025-04-26T16:24:14.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.runtimeconfig.json">
       <PackagePath>TestWindows\TestWindows.runtimeconfig.json</PackagePath>
@@ -87,7 +87,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.dll">
       <PackagePath>TestWindows\TestWindows.dll</PackagePath>
-      <Modified>2025-04-26T16:05:05.225</Modified>
+      <Modified>2025-04-26T16:24:14.903</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
