@@ -55,16 +55,22 @@
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.deps.json">
+    <AppxPackagedFile Include="C:\Users\tam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>TestWindows\Microsoft.Windows.SDK.NET.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll">
+      <PackagePath>TestWindows\WinRT.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.deps.json">
       <PackagePath>TestWindows\TestWindows.deps.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>TestWindows\TestWindows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.runtimeconfig.json">
       <PackagePath>TestWindows\TestWindows.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.dll">
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.dll">
       <PackagePath>TestWindows\TestWindows.dll</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

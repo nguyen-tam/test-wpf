@@ -6,8 +6,10 @@ C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\Square44x44Logo.tar
 C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\StoreLogo.png
 C:\Users\tam\source\repos\TestWindows\WapProjTemplate\Images\Wide310x150Logo.scale-200.png
 C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\resources.pri
-C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.deps.json
-C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\apphost.exe
-C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.runtimeconfig.json
-C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.dll
-C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.pdb
+C:\Users\tam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\tam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll
+C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.deps.json
+C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows10.0.19041.0\apphost.exe
+C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.runtimeconfig.json
+C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.dll
+C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.pdb

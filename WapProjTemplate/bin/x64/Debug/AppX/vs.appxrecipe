@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-26T16:24:15.450</Modified>
+      <Modified>2025-04-26T16:55:11.845</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -71,23 +71,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-26T08:35:26.769</Modified>
+      <Modified>2025-04-26T16:55:11.739</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.deps.json">
+    <AppxPackagedFile Include="C:\Users\tam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>TestWindows\Microsoft.Windows.SDK.NET.dll</PackagePath>
+      <Modified>2024-11-11T17:23:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll">
+      <PackagePath>TestWindows\WinRT.Runtime.dll</PackagePath>
+      <Modified>2024-11-11T17:23:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.deps.json">
       <PackagePath>TestWindows\TestWindows.deps.json</PackagePath>
-      <Modified>2025-04-26T08:35:25.531</Modified>
+      <Modified>2025-04-26T16:55:10.773</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>TestWindows\TestWindows.exe</PackagePath>
-      <Modified>2025-04-26T16:24:14.909</Modified>
+      <Modified>2025-04-26T16:55:10.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.runtimeconfig.json">
       <PackagePath>TestWindows\TestWindows.runtimeconfig.json</PackagePath>
-      <Modified>2025-04-26T08:35:25.616</Modified>
+      <Modified>2025-04-26T16:55:10.855</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.dll">
+    <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows10.0.19041.0\TestWindows.dll">
       <PackagePath>TestWindows\TestWindows.dll</PackagePath>
-      <Modified>2025-04-26T16:24:14.903</Modified>
+      <Modified>2025-04-26T16:55:10.540</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

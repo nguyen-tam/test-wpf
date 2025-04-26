@@ -25,3 +25,5 @@ C:\Users\tam\source\repos\TestWindows\WapProjTemplate\obj\x64\Debug\qualifiers.t
 C:\Users\tam\source\repos\TestWindows\WapProjTemplate\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\tam\source\repos\TestWindows\WapProjTemplate\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\tam\source\repos\TestWindows\WapProjTemplate\obj\x64\Debug\WapProjTemplate.wapproj.LastBuild.txt
+C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\TestWindows\Microsoft.Windows.SDK.NET.dll
+C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\TestWindows\WinRT.Runtime.dll
