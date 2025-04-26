@@ -19,3 +19,4 @@ C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\TestW
 C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\TestWindows.genruntimeconfig.cache
 C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\ref\TestWindows.dll
 C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\App.baml
+C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\TestWindows.sourcelink.json

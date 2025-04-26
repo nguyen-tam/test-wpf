@@ -9,6 +9,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Interop; // Required for HwndSource, HwndSourceHook
+using System.Runtime.InteropServices; // Required for DllImport and Point definition
 
 namespace TestWindows
 {
@@ -117,6 +119,66 @@ namespace TestWindows
             YourComboBox.Items.Add("Option 1");
             YourComboBox.Items.Add("Option 2");
             YourComboBox.Items.Add("Option 3");
+        }
+
+        // --- WM_NCHITTEST Handling for Snap Layouts ---
+
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            var helper = new WindowInteropHelper(this);
+            var hwnd = helper.Handle;
+            var source = HwndSource.FromHwnd(hwnd);
+            source?.AddHook(WndProc);
+        }
+
+        private const int WM_NCHITTEST = 0x0084;
+        private const int HTMAXBUTTON = 9; // Indicates the maximize button
+
+        // Basic Point struct if not available
+        [StructLayout(LayoutKind.Sequential)]
+        public struct Point
+        {
+            public int X;
+            public int Y;
+        }
+
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        internal static extern bool GetCursorPos(ref Point pt);
+
+
+        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            if (msg == WM_NCHITTEST)
+            {
+                // Use the custom Point struct for GetCursorPos
+                Point screenPointWin32 = new Point(); 
+                if (GetCursorPos(ref screenPointWin32))
+                {
+                    // Convert the Win32 screen point to a WPF screen point
+                    System.Windows.Point screenPointWpf = new System.Windows.Point(screenPointWin32.X, screenPointWin32.Y);
+
+                    // Convert the WPF screen point to a WPF client point relative to the window
+                    System.Windows.Point clientPoint = PointFromScreen(screenPointWpf);
+
+                    // Check if the point is within the MaximizeButton bounds
+                    if (MaximizeButton != null)
+                    {
+                        // Get the bounds of the button relative to the window
+                        Rect buttonBounds = MaximizeButton.TransformToAncestor(this)
+                                                    .TransformBounds(new Rect(0, 0, MaximizeButton.ActualWidth, MaximizeButton.ActualHeight));
+
+                        // Check if the client point is within the button bounds
+                        if (buttonBounds.Contains(clientPoint)) // Use the WPF clientPoint here
+                        {
+                            handled = true;
+                            return new IntPtr(HTMAXBUTTON);
+                        }
+                    }
+                }
+            }
+            return IntPtr.Zero;
         }
     }
 }

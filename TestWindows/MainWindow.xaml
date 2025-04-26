@@ -6,18 +6,29 @@
         xmlns:local="clr-namespace:TestWindows"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        WindowStyle="None" ResizeMode="CanResize"
-        BorderThickness="1" BorderBrush="#CCCCCC"
-        Background="White">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        
-        <!-- Custom Title Bar -->
-        <Border x:Name="TitleBarBorder" Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="#DDDDDD">
-            <Grid x:Name="AppTitleBar" Background="{StaticResource TitleBarBackgroundBrush}">
+        WindowStyle="None" 
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        BorderThickness="0"
+        Background="Transparent">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="32" 
+                      ResizeBorderThickness="8" 
+                      GlassFrameThickness="0" 
+                      CornerRadius="0"
+                      UseAeroCaptionButtons="False"
+                      NonClientFrameEdges="None"/>
+    </WindowChrome.WindowChrome>
+
+    <Border BorderThickness="1" BorderBrush="#CCCCCC" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid x:Name="AppTitleBar" Grid.Row="0" Background="{StaticResource TitleBarBackgroundBrush}" Margin="0,0,0,-1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/> <!-- App Title -->
                     <ColumnDefinition Width="*"/> <!-- Space for ComboBox -->
@@ -51,11 +62,11 @@
                     </Button>
                 </StackPanel>
             </Grid>
-        </Border>
-        
-        <!-- Main Content Area -->
-        <Grid Grid.Row="1" Margin="10">
-            <!-- Your application content goes here -->
+            
+            <!-- Main Content Area -->
+            <Grid Grid.Row="1" Margin="10">
+                <!-- Your application content goes here -->
+            </Grid>
         </Grid>
-    </Grid>
+    </Border>
 </Window>

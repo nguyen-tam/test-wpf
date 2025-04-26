@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-26T07:38:07.113</Modified>
+      <Modified>2025-04-26T16:05:06.488</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -71,23 +71,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\WapProjTemplate\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-26T07:19:11.338</Modified>
+      <Modified>2025-04-26T08:35:26.769</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.deps.json">
       <PackagePath>TestWindows\TestWindows.deps.json</PackagePath>
-      <Modified>2025-04-26T07:17:02.985</Modified>
+      <Modified>2025-04-26T08:35:25.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\obj\Debug\net8.0-windows\apphost.exe">
       <PackagePath>TestWindows\TestWindows.exe</PackagePath>
-      <Modified>2025-04-26T07:38:06.593</Modified>
+      <Modified>2025-04-26T16:05:05.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.runtimeconfig.json">
       <PackagePath>TestWindows\TestWindows.runtimeconfig.json</PackagePath>
-      <Modified>2025-04-26T07:17:03.207</Modified>
+      <Modified>2025-04-26T08:35:25.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tam\source\repos\TestWindows\TestWindows\bin\Debug\net8.0-windows\TestWindows.dll">
       <PackagePath>TestWindows\TestWindows.dll</PackagePath>
-      <Modified>2025-04-26T07:38:06.587</Modified>
+      <Modified>2025-04-26T16:05:05.225</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
